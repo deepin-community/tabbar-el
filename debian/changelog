@@ -1,5 +1,54 @@
-template-repository (1.0-1) unstable; urgency=medium
+tabbar-el (2.2-6) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Rebuild against dh-elpa 2.1.5.
+    Upload pushed to dgit-repos but not salsa.
+    See <https://lists.debian.org/debian-emacsen/2024/07/msg00077.html>.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Sean Whitton <spwhitton@spwhitton.name>  Fri, 26 Jul 2024 11:22:48 +0900
+
+tabbar-el (2.2-5) unstable; urgency=medium
+
+  [ Nicholas D Steeves ]
+  * Update my email address.
+  * Declare Standards-Version: 4.6.2 (no changes required).
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster (oldstable):
+    + elpa-tabbar: Drop versioned constraint on emacs in Recommends.
+
+ -- Nicholas D Steeves <sten@debian.org>  Sat, 18 Feb 2023 18:28:57 -0500
+
+tabbar-el (2.2-4) unstable; urgency=medium
+
+  * Rebuild with dh-elpa 2.0.
+  * Migrate to debhelper-compat 13.
+  * Add Rules-Requires-Root: no.
+  * Update my copyright years.
+  * Declare Standards-Version: 4.5.1 (no changes required).
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Tue, 08 Dec 2020 07:10:58 -0500
+
+tabbar-el (2.2-3) unstable; urgency=medium
+
+  * Team upload.
+  * Rebuild with current dh-elpa
+
+ -- David Bremner <bremner@debian.org>  Mon, 26 Aug 2019 14:29:12 -0300
+
+tabbar-el (2.2-2) unstable; urgency=medium
+
+  * debian/copyright: Include the relevant parts of both upstream
+    discussions as comments (Closes: #904782).
+  * debian/control:
+    - Set maintainer to Debian Emacsen team.
+    - Drop emacs25 from Enhances, because emacs is now unversioned.
+  * Declare Standards-Version: 4.3.0 (no changes required).
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Fri, 28 Dec 2018 17:41:05 -0700
+
+tabbar-el (2.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #437114).
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Fri, 27 Jul 2018 12:02:42 -0400
