@@ -1,15 +1,31 @@
-Source: template-repository
-Section: unknown
+Source: tabbar-el
+Section: editors
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Emacsen team <debian-emacsen@lists.debian.org>
+Uploaders: Nicholas D Steeves <sten@debian.org>
+Build-Depends: debhelper-compat (= 13)
+             , dh-elpa
+Rules-Requires-Root: no
+Standards-Version: 4.6.2
+Vcs-Browser: https://salsa.debian.org/emacsen-team/tabbar-el
+Vcs-Git: https://salsa.debian.org/emacsen-team/tabbar-el.git
+Homepage: https://github.com/dholm/tabbar
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: elpa-tabbar
+Architecture: all
+Depends: ${elpa:Depends}, ${misc:Depends}
+Recommends: emacs
+Enhances: emacs
+Description: Emacs minor mode that displays a tab bar at the top
+ This library provides the Tabbar global minor mode which displays a
+ tab bar in the header line of Emacs.  Click on a tab to select it.
+ Three buttons are displayed on the left side of the tab bar in
+ this order: "home", "scroll left", and "scroll right" buttons.  The
+ "home" button is used to change something on the tab bar.  The scroll
+ left and scroll right buttons are used to scroll tabs horizontally.
+ Tabs can be grouped to maintain several sets of tabs at the same
+ time.  Only one group is displayed on the tab bar, and the "home"
+ button is used to switch between the tab bar groups.
+ .
+ While the mouse is usually the preferred way to work with the tab
+ bar, it is also keyboard-accessible.
